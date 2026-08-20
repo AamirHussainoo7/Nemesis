@@ -14,7 +14,7 @@ export default function FeatureGrid() {
             From empty room to shoppable space.
           </h2>
           <p className="section-body max-w-2xl text-base lg:text-lg">
-            Nemesis Interiors combines generative AI, architectural preservation, and
+            Nemesis Interiors combines advanced technology, architectural preservation, and
             computer vision to turn a room photo into an interactive design experience.
           </p>
         </div>

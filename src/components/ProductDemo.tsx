@@ -45,7 +45,7 @@ export default function ProductDemo() {
             </h2>
             <p className="text-nemesis-muted text-base lg:text-lg leading-relaxed mb-10 max-w-sm">
               This is what the Nemesis Interiors application looks like. Upload a photo,
-              choose a style, and let the AI do the rest.
+              choose a style, and let our engine do the rest.
             </p>
             <div className="h-px w-16 bg-nemesis-gold/30" />
           </div>

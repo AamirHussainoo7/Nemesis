@@ -22,17 +22,8 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10 w-full flex-1 flex flex-col">
-        {/* Label */}
-        <div className="flex items-center gap-2.5 mt-8 mb-8 reveal-on-scroll">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-nemesis-border bg-nemesis-surface">
-            <span className="w-1.5 h-1.5 rounded-full bg-nemesis-gold animate-pulse" />
-            <span className="text-[10px] uppercase tracking-widest text-nemesis-gold font-medium">
-              AI-Powered Interior Design
-            </span>
-          </div>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-14 flex-1 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 items-start gap-12 lg:gap-14 flex-1 pb-16 pt-8">
           {/* ——— Left: Copy ——— */}
           <div className="lg:col-span-5 flex flex-col justify-center reveal-on-scroll">
             <h1
@@ -52,7 +43,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-nemesis-ivory-dim text-base lg:text-lg leading-relaxed mb-8 max-w-md">
-              Restyle your space with AI while preserving its architecture. Discover
+              Restyle your space instantly while preserving its architecture. Discover
               furniture and decor you love — and shop them directly.
             </p>
 
@@ -75,23 +66,7 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Honest attribution */}
-            <div className="flex items-center gap-3 pt-5 border-t border-nemesis-border">
-              <div className="flex gap-1">
-                {['◈', '◉', '◇'].map((s, i) => (
-                  <span key={i} className="w-7 h-7 rounded-full bg-nemesis-surface border border-nemesis-border
-                                           flex items-center justify-center text-nemesis-gold text-xs">
-                    {s}
-                  </span>
-                ))}
-              </div>
-              <p className="text-nemesis-muted text-xs leading-snug">
-                Built for the{' '}
-                <span className="text-nemesis-ivory-dim font-medium">
-                  Acdyon Technologies Engineering Challenge
-                </span>
-              </p>
-            </div>
+
           </div>
 
           {/* ——— Right: Interactive Visual ——— */}

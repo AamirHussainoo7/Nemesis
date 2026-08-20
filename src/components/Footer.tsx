@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { label: 'Product', href: '#product' },
 ];
 
-const TECH_STACK = ['React', 'TypeScript', 'Tailwind CSS', 'Google Gen AI SDK', 'Firebase'];
 
 export default function Footer() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -21,7 +20,7 @@ export default function Footer() {
       role="contentinfo"
     >
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
@@ -39,7 +38,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-nemesis-muted text-sm leading-relaxed max-w-[220px]">
-              AI-powered interior redesign and visual shopping.
+              Premium interior redesign and visual shopping.
             </p>
           </div>
 
@@ -74,52 +73,14 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Engineering */}
-          <div>
-            <p className="text-[10px] uppercase tracking-widest text-nemesis-muted mb-4 font-medium">
-              ENGINEERING
-            </p>
-            <p className="text-nemesis-ivory-dim text-sm mb-3 leading-snug">
-              Built for the{' '}
-              <span className="text-nemesis-ivory font-medium">
-                Acdyon Technologies Engineering Challenge
-              </span>
-            </p>
 
-            {/* Tech stack */}
-            <div className="flex flex-wrap gap-1.5 mb-5">
-              {TECH_STACK.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-2 py-0.5 rounded text-[10px] font-mono border border-nemesis-border
-                             text-nemesis-muted bg-nemesis-surface"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {/* GitHub link */}
-            <a
-              href="https://github.com/YOUR_USERNAME/nemesis-interiors"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-nemesis-muted
-                         hover:text-nemesis-ivory transition-colors duration-200"
-              aria-label="View Nemesis Interiors on GitHub (opens in new tab)"
-            >
-              <GitHubSVG />
-              View on GitHub
-              <ExternalLink size={11} />
-            </a>
-          </div>
         </div>
 
         {/* Bottom strip */}
         <div className="mt-12 pt-6 border-t border-nemesis-border flex flex-col sm:flex-row
                         items-center justify-between gap-3">
           <p className="text-nemesis-muted text-xs">
-            © 2025 Nemesis Interiors — Acdyon Technologies Engineering Challenge
+            © 2025 Nemesis Interiors. All rights reserved.
           </p>
           <p className="text-nemesis-muted text-xs">
             No affiliation with any real commercial entity

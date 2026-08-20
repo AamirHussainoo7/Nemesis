@@ -63,9 +63,9 @@ export const features = [
   {
     id: 'ai-restyling',
     icon: 'Sparkles',
-    title: 'AI Room Restyling',
-    description: 'Transform your room with curated interior styles using generative AI.',
-    detail: 'Choose from Minimalist, Scandinavian, Industrial, Bohemian, and more — the AI recreates your space while respecting its spatial character.',
+    title: 'Smart Room Restyling',
+    description: 'Transform your room with curated interior styles using our advanced rendering engine.',
+    detail: 'Choose from Minimalist, Scandinavian, Industrial, Bohemian, and more — our engine recreates your space while respecting its spatial character.',
     chips: ['Minimalist', 'Scandinavian', 'Industrial', 'Bohemian', 'Mid-Century', 'Art Deco', 'Tropical', 'Cyberpunk'],
   },
   {
@@ -80,7 +80,7 @@ export const features = [
     id: 'hotspots',
     icon: 'ScanSearch',
     title: 'Shoppable Hotspots',
-    description: 'AI detects visible furniture and decor and turns them into interactive shopping hotspots.',
+    description: 'Our engine detects visible furniture and decor and turns them into interactive shopping hotspots.',
     detail: 'Click any glowing marker in the transformed image to identify the item and explore shopping results.',
     chips: [],
   },
@@ -106,7 +106,7 @@ export const steps = [
     number: '02',
     title: 'Restyle',
     subtitle: 'Choose a style and let Nemesis transform the space.',
-    description: 'Select from a curated library of interior styles. The AI preserves your room\'s architecture while completely transforming its aesthetic.',
+    description: 'Select from a curated library of interior styles. Nemesis preserves your room\'s architecture while completely transforming its aesthetic.',
   },
   {
     number: '03',
