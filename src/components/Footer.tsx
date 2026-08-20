@@ -4,7 +4,7 @@ const NAV_LINKS = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Styles', href: '#styles' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Product', href: '#product' },
 ];
 
 const TECH_STACK = ['React', 'TypeScript', 'Tailwind CSS', 'Google Gen AI SDK', 'Firebase'];
@@ -21,7 +21,7 @@ export default function Footer() {
       role="contentinfo"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
@@ -43,12 +43,12 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Nav links */}
+          {/* Product */}
           <div>
             <p className="text-[10px] uppercase tracking-widest text-nemesis-muted mb-4 font-medium">
-              Navigation
+              PRODUCT
             </p>
-            <nav className="flex flex-col gap-2.5" aria-label="Footer navigation">
+            <nav className="flex flex-col gap-2.5" aria-label="Product navigation">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.label}
@@ -62,10 +62,22 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Attribution */}
+          {/* Resources */}
           <div>
             <p className="text-[10px] uppercase tracking-widest text-nemesis-muted mb-4 font-medium">
-              About this Project
+              RESOURCES
+            </p>
+            <nav className="flex flex-col gap-2.5" aria-label="Resources navigation">
+              <a href="#documentation" className="text-nemesis-muted text-sm hover:text-nemesis-ivory transition-colors duration-200 w-fit">Documentation</a>
+              <a href="#privacy" className="text-nemesis-muted text-sm hover:text-nemesis-ivory transition-colors duration-200 w-fit">Privacy</a>
+              <a href="#terms" className="text-nemesis-muted text-sm hover:text-nemesis-ivory transition-colors duration-200 w-fit">Terms</a>
+            </nav>
+          </div>
+
+          {/* Engineering */}
+          <div>
+            <p className="text-[10px] uppercase tracking-widest text-nemesis-muted mb-4 font-medium">
+              ENGINEERING
             </p>
             <p className="text-nemesis-ivory-dim text-sm mb-3 leading-snug">
               Built for the{' '}
