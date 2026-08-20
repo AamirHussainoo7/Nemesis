@@ -8,10 +8,10 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="py-24 lg:py-32 border-t border-nemesis-border"
+      className="py-24 lg:py-40 border-t border-nemesis-border"
       aria-labelledby="hiw-heading"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10">
         {/* Header */}
         <div className="mb-16 reveal-on-scroll">
           <p className="section-label mb-4">Process</p>

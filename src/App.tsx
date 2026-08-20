@@ -1,4 +1,4 @@
-
+import { ReactLenis } from 'lenis/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeatureGrid from './components/FeatureGrid';
@@ -14,18 +14,20 @@ export default function App() {
   useScrollReveal();
 
   return (
-    <div className="min-h-screen bg-nemesis-bg text-nemesis-ivory overflow-x-hidden">
-      <Navbar />
-      <main>
-        <Hero />
-        <FeatureGrid />
-        <HowItWorks />
-        <ProductDemo />
-        <StyleExplorer />
-        <ShoppableHotspots />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </div>
+    <ReactLenis root>
+      <div className="min-h-screen bg-nemesis-bg text-nemesis-ivory overflow-x-hidden">
+        <Navbar />
+        <main>
+          <Hero />
+          <FeatureGrid />
+          <HowItWorks />
+          <ProductDemo />
+          <StyleExplorer />
+          <ShoppableHotspots />
+          <FinalCTA />
+        </main>
+        <Footer />
+      </div>
+    </ReactLenis>
   );
 }

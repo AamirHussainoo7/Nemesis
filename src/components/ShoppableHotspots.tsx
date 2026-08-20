@@ -11,8 +11,8 @@ export default function ShoppableHotspots() {
   const activeHotspotData = hotspots.find(h => h.id === activeProduct);
 
   return (
-    <section id="shopping" className="py-24 lg:py-32 border-t border-nemesis-border" aria-labelledby="shopping-heading">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="shopping" className="py-24 lg:py-40 border-t border-nemesis-border" aria-labelledby="shopping-heading">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10">
         {/* Header */}
         <div className="mb-12 reveal-on-scroll">
           <p className="section-label mb-4">Visual Shopping</p>

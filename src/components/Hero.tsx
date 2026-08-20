@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col pt-16 overflow-hidden"
+      className="relative min-h-[85vh] flex flex-col pt-24 overflow-hidden"
       aria-labelledby="hero-heading"
     >
       {/* Subtle background gradient */}
@@ -21,9 +21,9 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1 flex flex-col">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10 w-full flex-1 flex flex-col">
         {/* Label */}
-        <div className="flex items-center gap-2.5 mt-12 mb-8 reveal-on-scroll">
+        <div className="flex items-center gap-2.5 mt-8 mb-8 reveal-on-scroll">
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-nemesis-border bg-nemesis-surface">
             <span className="w-1.5 h-1.5 rounded-full bg-nemesis-gold animate-pulse" />
             <span className="text-[10px] uppercase tracking-widest text-nemesis-gold font-medium">
@@ -32,17 +32,16 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-8 flex-1 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-14 flex-1 pb-16">
           {/* ——— Left: Copy ——— */}
-          <div className="lg:w-[42%] xl:w-[38%] flex-shrink-0 reveal-on-scroll">
+          <div className="lg:col-span-5 flex flex-col justify-center reveal-on-scroll">
             <h1
               id="hero-heading"
-              className="font-display leading-[1.04] tracking-tight text-nemesis-ivory mb-6"
-              style={{ fontSize: 'clamp(2.4rem, 5.5vw, 4.6rem)' }}
+              className="font-display text-hero text-nemesis-ivory mb-6"
             >
-              Turn any room photo into a photorealistic,{' '}
+              Turn any room photo<br/>into a photorealistic,<br/>
               <span
-                className="italic"
+                className="italic inline-block mt-1"
                 style={{
                   color: '#C9A96E',
                   textShadow: '0 0 40px rgba(201,169,110,0.3)',
@@ -96,11 +95,11 @@ export default function Hero() {
           </div>
 
           {/* ——— Right: Interactive Visual ——— */}
-          <div className="w-full lg:flex-1 reveal-on-scroll" style={{ transitionDelay: '150ms' }}>
+          <div className="lg:col-span-7 w-full reveal-on-scroll" style={{ transitionDelay: '150ms' }}>
             <div
               className="relative rounded-2xl overflow-hidden"
               style={{
-                aspectRatio: '16/11',
+                aspectRatio: '16/10',
                 boxShadow: '0 0 0 1px rgba(201,169,110,0.12), 0 32px 80px rgba(0,0,0,0.7), 0 0 60px rgba(201,169,110,0.04)',
               }}
             >
@@ -113,7 +112,7 @@ export default function Hero() {
             </div>
 
             {/* Below the visual: hint text */}
-            <p className="mt-3 text-center text-nemesis-muted text-xs tracking-wide">
+            <p className="mt-4 text-center text-nemesis-muted text-xs tracking-wide">
               Drag the slider · Click the markers to explore products
             </p>
           </div>

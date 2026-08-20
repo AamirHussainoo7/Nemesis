@@ -25,7 +25,7 @@ export default {
         display: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       fontSize: {
-        'hero': ['clamp(2.5rem, 6vw, 5rem)', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
+        'hero': ['clamp(3.5rem, 5vw, 5.5rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
         'display': ['clamp(1.8rem, 4vw, 3.5rem)', { lineHeight: '1.1', letterSpacing: '-0.025em' }],
       },
       animation: {
